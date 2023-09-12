@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xxl);
+  width: 100%;
+  h1 {
+    margin-left: var(--spacing-sm) 
+  }
+}
