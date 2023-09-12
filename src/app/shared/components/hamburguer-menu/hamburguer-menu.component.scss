@@ -1,0 +1,57 @@
+.burger-menu {
+  width: var(--fs-lg);
+  height: var(--fs-lg);
+  cursor: pointer;
+
+  .burger-container {
+    position: relative;
+
+    .burger-inner {
+      position: absolute;
+      width: calc(var(--fs-lg) - 2 * var(--border-thin));
+      left: 0px;
+      top: calc(var(--fs-lg) / 2);
+      border: var(--border-thin) solid var(--white);
+      transition: border-color .2s ease-in .2s;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: calc((var(--spacing-sm) + 2px) * -1);
+        left: calc(var(--border-thin) * -1);
+        width: calc(var(--fs-lg) - 2 * var(--border-thin));
+        border: var(--border-thin) solid var(--white);
+        border-radius: var(--border-radius-sm);
+        transition: top .2s ease-in .3s, transform ease-in .2s;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: var(--spacing-sm);
+        border-radius: var(--border-radius-sm);
+        left: calc(var(--border-thin) * -1);
+        width: calc(var(--fs-lg) - 2 * var(--border-thin));
+        border: var(--border-thin) solid var(--white);
+        transition: top .2s ease-in .3s, transform ease-in .2s;
+      }
+    }
+  }
+
+  &.active .burger-container .burger-inner {
+    border-color: transparent;
+    transition: border-color ease-in .1s;
+  }
+
+  &.active .burger-container .burger-inner::before {
+    top: var(--border-thin);
+    transform: rotate(-45deg);
+    transition: top ease-out .2s, transform .2s ease-out .3s;
+  }
+
+  &.active .burger-container .burger-inner::after {
+    top: var(--border-thin);
+    transform: rotate(45deg);
+    transition: top ease-out .2s, transform .2s ease-out .3s;
+  }
+}

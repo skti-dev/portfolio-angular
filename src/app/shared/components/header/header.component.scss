@@ -1,0 +1,14 @@
+:host {
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: var(--spacing-lg);
+    height: var(--spacing-xxxl);
+  }
+}
