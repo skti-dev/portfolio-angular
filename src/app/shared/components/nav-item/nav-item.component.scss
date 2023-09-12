@@ -1,0 +1,12 @@
+a {
+  padding: var(--spacing-xxl);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: var(--fs-lg);
+    flex: 1;
+    text-align: center;
+  }
+}

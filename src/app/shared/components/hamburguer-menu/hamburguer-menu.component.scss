@@ -1,6 +1,7 @@
 .burger-menu {
-  width: var(--fs-lg);
-  height: var(--fs-lg);
+  width: var(--fs-xl);
+  height: var(--fs-xl);
+  transform: translateY(calc(var(--spacing-sm) * -1));
   cursor: pointer;
 
   .burger-container {
@@ -8,9 +9,9 @@
 
     .burger-inner {
       position: absolute;
-      width: calc(var(--fs-lg) - 2 * var(--border-thin));
+      width: calc(var(--fs-xl) - 2 * var(--border-thin));
       left: 0px;
-      top: calc(var(--fs-lg) / 2);
+      top: calc(var(--fs-xl) / 2);
       border: var(--border-thin) solid var(--white);
       transition: border-color .2s ease-in .2s;
 
@@ -19,7 +20,7 @@
         position: absolute;
         top: calc((var(--spacing-sm) + 2px) * -1);
         left: calc(var(--border-thin) * -1);
-        width: calc(var(--fs-lg) - 2 * var(--border-thin));
+        width: calc(var(--fs-xl) - 2 * var(--border-thin));
         border: var(--border-thin) solid var(--white);
         border-radius: var(--border-radius-sm);
         transition: top .2s ease-in .3s, transform ease-in .2s;
@@ -31,7 +32,7 @@
         top: var(--spacing-sm);
         border-radius: var(--border-radius-sm);
         left: calc(var(--border-thin) * -1);
-        width: calc(var(--fs-lg) - 2 * var(--border-thin));
+        width: calc(var(--fs-xl) - 2 * var(--border-thin));
         border: var(--border-thin) solid var(--white);
         transition: top .2s ease-in .3s, transform ease-in .2s;
       }

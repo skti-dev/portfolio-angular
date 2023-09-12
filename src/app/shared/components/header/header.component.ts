@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  public isMenuOpen: boolean = false
 
+  public setIsMenuOpen(value: boolean): void {
+    this.isMenuOpen = value
+  }
 }
