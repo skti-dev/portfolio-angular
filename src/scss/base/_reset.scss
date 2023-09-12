@@ -119,3 +119,17 @@ nav svg {
   width: var(--fs-lg);
   color: var(--primary);
 }
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 300ms;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
