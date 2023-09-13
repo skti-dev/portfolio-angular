@@ -1,0 +1,9 @@
+{
+  "menu_items": {
+    "home": "Home",
+    "about": "Sobre mim",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  }
+}

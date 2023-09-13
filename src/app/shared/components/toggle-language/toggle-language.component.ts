@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FlagNames, LANGUAGE_KEY, AvailableLanguages } from '../../types/LanguageTypes';
 import { LocalStorageService } from '../../services/LocalStorageService';
+import { TranslateService } from '../../services/TranslateService';
 
 @Component({
   selector: 'app-toggle-language',
@@ -9,7 +10,8 @@ import { LocalStorageService } from '../../services/LocalStorageService';
 })
 export class ToggleLanguageComponent implements OnInit {
   constructor(
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private translateService: TranslateService
   ) {}
 
   public displayFlag: FlagNames = FlagNames.US
@@ -38,6 +40,7 @@ export class ToggleLanguageComponent implements OnInit {
 
     if(success) {
       this.currentLanguage = selected
+      this.translateService.setLanguage(this.currentLanguage)
 
       if(saveOnLocalStorage) {
         this.localStorageService.setItem(LANGUAGE_KEY, this.currentLanguage)
