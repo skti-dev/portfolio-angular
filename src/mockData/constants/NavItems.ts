@@ -8,22 +8,22 @@ export const NAV_ITEMS: NavItems =  [
     icon: faHome
   },
   {
-    path: '',
+    path: ItemLabels.ABOUT,
     label: 'menu_items.about',
     icon: faInfo
   },
   {
-    path: '',
+    path: ItemLabels.SKILLS,
     label: 'menu_items.skills',
     icon: faBullseye
   },
   {
-    path: '',
+    path: ItemLabels.PROJECTS,
     label: 'menu_items.projects',
     icon: faCode
   },
   {
-    path: '',
+    path: ItemLabels.CONTACT,
     label: 'menu_items.contact',
     icon: faAddressBook
   }

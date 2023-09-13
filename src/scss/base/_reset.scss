@@ -127,8 +127,13 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-xl) 0;
-  height: 100%;
+  padding: var(--spacing-xl);
+  height: calc(100vh - (var(--spacing-xl) * 2));
+
+  &.dark {
+    color: var(--white);
+    background-color: var(--secondary);
+  }
 }
 
 .highlight-text {
@@ -150,6 +155,7 @@ section {
   font-weight: var(--bold-weight);
   position: relative;
   font-size: var(--fs-lg);
+  transform: translateX(var(--spacing-md-2));
 
   &::after {
     content: '';
