@@ -13,6 +13,8 @@ import { IntroComponent } from './components/intro/intro.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { SkillItemComponent } from '../shared/components/skill-item/skill-item.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectItemComponent } from '../shared/components/project-item/project-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SkillItemComponent } from '../shared/components/skill-item/skill-item.c
     IntroComponent,
     AboutComponent,
     SkillsComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    ProjectsComponent,
+    ProjectItemComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,18 @@
+<button class="project-card" *ngIf="item" type="button" (click)="openProject()">
+  <ng-container>
+    <span class="icon-container" [class]="item.imgSrc ? 'has-image' : ''">
+      <fa-icon *ngIf="!item.imgSrc; else hasImg" [icon]="defaultIcon" />
+      <ng-template #hasImg>
+        <img [src]="item.imgSrc" [alt]="item.imgAlt" />
+      </ng-template>
+    </span>
+  </ng-container>
+
+  <h3> {{ item.title }} </h3>
+
+  <ul>
+    <li *ngFor="let technology of item.technologies">
+      {{ technology }}
+    </li>
+  </ul>
+</button>

@@ -24,10 +24,13 @@
   --border-radius-md: .5rem; // 8px
   --border-radius-lg: 2rem; // 8px
   // box shadow
+  --box-shadow-sm: 0 0 5px 2px rgba(0, 0, 0, 0.25);
   --box-shadow-md: 0 0 8px 2px rgba(0, 0, 0, 0.25);
   // colors
   --white: #FFF;
   --black: #222;
   --primary: #F44E4E;
   --secondary: #3E4246;
+  --light-gray: #CCC;
+  --transparent-gray: rgba(180, 180, 180, .25)
 }

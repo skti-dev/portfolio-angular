@@ -1,0 +1,14 @@
+:host {
+  article {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-height: calc(100% - (var(--spacing-xxl) + 34px));
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 250px);
+    grid-column-gap: var(--fs-sm);
+    grid-row-gap: var(--fs-sm);
+  }
+}

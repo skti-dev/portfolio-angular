@@ -24,5 +24,8 @@
   },
   "skills": {
     "title": "Habilidades"
+  },
+  "projects": {
+    "title": "Projetos"
   }
 }

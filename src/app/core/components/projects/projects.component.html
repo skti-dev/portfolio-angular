@@ -1,0 +1,9 @@
+<section [id]="currentLabel" *ngIf="dictionary" class="dark">
+  <h2 class="section-title"> {{ dictionary.projects.title }} </h2>
+  <article>
+    <app-project-item
+      *ngFor="let item of items"
+      [item]="item"
+    />
+  </article>
+</section>
