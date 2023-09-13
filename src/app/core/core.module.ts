@@ -10,6 +10,7 @@ import { ToggleLanguageComponent } from '../shared/components/toggle-language/to
 import { NavMenuComponent } from '../shared/components/nav-menu/nav-menu.component';
 import { NavItemComponent } from '../shared/components/nav-item/nav-item.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IntroComponent } from './components/intro/intro.component';
     ToggleLanguageComponent,
     NavMenuComponent,
     NavItemComponent,
-    IntroComponent
+    IntroComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,

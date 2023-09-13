@@ -137,7 +137,8 @@ section {
 }
 
 .highlight-text {
-  color: var(--primary)
+  color: var(--primary);
+  font-weight: var(--bold-weight);
 }
 
 /* Buttons */
@@ -179,6 +180,19 @@ section {
     border-color: var(--black) transparent transparent transparent;
     transform: rotate(180deg);
   }
+}
+
+.chip-button {
+  min-width: 300px;
+  border: var(--border-thicker) solid var(--primary);
+  color: var(--primary);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md) 0;
+  font-weight: var(--bold-weight);
 }
 
 /* Animations */

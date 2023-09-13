@@ -11,5 +11,15 @@
     "presentation": "My name is",
     "dynamic_text": "I'm a web developer.",
     "contact_button": "Contact me"
+  },
+  "about": {
+    "title": "About me",
+    "text_1": "years of professional experience with web development.",
+    "text_2": "With the main focus on front-end, I have a solid knowledge of",
+    "text_separator": "and",
+    "text_3": "Experience with agile methodologies.",
+    "text_4": "Graduated from",
+    "text_5": "and always studying something new!",
+    "button_label": "Download CV"
   }
 }

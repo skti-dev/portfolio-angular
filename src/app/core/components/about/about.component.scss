@@ -1,0 +1,21 @@
+:host {
+  h2 {
+    font-weight: var(--bold-weight);
+    width: 100%;
+    font-size: var(--fs-lg);
+    margin-bottom: var(--spacing-xxl);
+  }
+
+  article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    > p:nth-child(2) {
+      margin: var(--spacing-lg) 0;
+    }
+  }
+
+  button {
+    margin-bottom: var(--spacing-lg);
+  }
+}

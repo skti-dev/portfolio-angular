@@ -1,0 +1,47 @@
+<section [id]="currentLabel" *ngIf="dictionary" class="dark">
+  <h2> {{ dictionary.about.title }} </h2>
+  
+  <article>
+    <p>
+      <span class="highlight-text">
+        5+
+      </span>
+      {{ dictionary.about.text_1 }}
+    </p>
+    <p>
+      {{ dictionary.about.text_2 }}
+      <span class="highlight-text">
+        React
+      </span>,
+      <span class="highlight-text">
+        Angular
+      </span>,
+      <span class="highlight-text">
+        Vue
+      </span>,
+      <span class="highlight-text">
+        JavaScript
+      </span>,
+      <span class="highlight-text">
+        TypeScript
+      </span>
+      {{ dictionary.about.text_separator }}
+      <span class="highlight-text">
+        Rest APIs
+      </span>
+      {{ dictionary.about.text_3 }}
+    </p>
+    <p>
+      {{ dictionary.about.text_4 }}
+      <span class="highlight-text">
+        FIAP
+      </span>
+      {{ dictionary.about.text_5 }}
+      <fa-icon [icon]="icon" />
+    </p>
+  </article>
+
+  <button type="button" class="chip-button">
+    {{ dictionary.about.button_label }}
+  </button>
+</section>
