@@ -1,0 +1,16 @@
+:host {
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+    font-weight: var(--bold-weight);
+    width: 100%;
+    span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: calc(100% - var(--spacing-md) + var(--fs-lg));
+    }
+  }
+}

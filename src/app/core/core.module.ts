@@ -15,6 +15,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { SkillItemComponent } from '../shared/components/skill-item/skill-item.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectItemComponent } from '../shared/components/project-item/project-item.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactItemComponent } from '../shared/components/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ProjectItemComponent } from '../shared/components/project-item/project-
     SkillsComponent,
     SkillItemComponent,
     ProjectsComponent,
-    ProjectItemComponent
+    ProjectItemComponent,
+    ContactComponent,
+    ContactItemComponent
   ],
   imports: [
     CommonModule,

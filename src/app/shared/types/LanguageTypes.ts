@@ -40,4 +40,8 @@ export type DictionaryProps = {
   projects: {
     title:string
   }
+  contact: {
+    title:string
+    button_label:string
+  }
 }

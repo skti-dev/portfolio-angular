@@ -175,6 +175,19 @@ section {
   }
 }
 
+.contact-item {
+  svg {
+    font-size: var(--fs-xl);
+    color: var(--primary);
+  }
+}
+
+footer {
+  svg {
+    font-size: var(--fs-sm);
+  }
+}
+
 /* Buttons */
 
 .flag-button {
@@ -227,6 +240,10 @@ section {
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-md) 0;
   font-weight: var(--bold-weight);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: var(--spacing-xxxl);
 }
 
 /* Animations */

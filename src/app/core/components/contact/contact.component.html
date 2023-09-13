@@ -1,0 +1,19 @@
+<section [id]="currentLabel" *ngIf="dictionary">
+  <h2 class="section-title"> {{ dictionary.contact.title }} </h2>
+  
+  <button type="button" class="chip-button" (click)="callOnWhatsapp()">
+    {{ dictionary.contact.button_label }} Whatsapp
+  </button>
+
+  <ul>
+    <li *ngFor="let item of items">
+      <app-contact-item [item]="item" />
+    </li>
+  </ul>
+  
+  <footer>
+    <fa-icon [icon]="footerIcon" />
+    <p>  {{ name }} | 2023 </p>
+  </footer>
+</section>
+

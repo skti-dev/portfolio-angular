@@ -27,5 +27,9 @@
   },
   "projects": {
     "title": "Projetos"
+  },
+  "contact": {
+    "title": "Contato",
+    "button_label": "Chamar no"
   }
 }

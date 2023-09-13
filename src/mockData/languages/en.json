@@ -27,5 +27,9 @@
   },
   "projects": {
     "title": "Projects"
+  },
+  "contact": {
+    "title": "Contact",
+    "button_label": "Call on"
   }
 }
