@@ -1,13 +1,14 @@
-import { AvailableTechnologies, ProjectItems } from "src/app/shared/types/ProjectsTypes";
+import { ProjectItems } from "src/app/shared/types/ProjectsTypes";
+import { Technologies } from "./GeneralData";
 
 export const PROJECTS: ProjectItems = [
   {
     title: 'Skate Dice',
     technologies: [
-      AvailableTechnologies.JS,
-      AvailableTechnologies.REACT,
-      AvailableTechnologies.CSS,
-      AvailableTechnologies.HTML
+      Technologies.JAVASCRIPT,
+      Technologies.REACT,
+      Technologies.CSS,
+      Technologies.HTML
     ],
     link: 'https://skate-dice.vercel.app/',
     imgSrc: '/assets/projects/skate-dice-cover.png',
@@ -16,10 +17,10 @@ export const PROJECTS: ProjectItems = [
   {
     title: 'Pokedex',
     technologies: [
-      AvailableTechnologies.TS,
-      AvailableTechnologies.ANGULAR,
-      AvailableTechnologies.SASS,
-      AvailableTechnologies.HTML
+      Technologies.TYPESCRIPT,
+      Technologies.ANGULAR,
+      Technologies.SASS,
+      Technologies.HTML
     ],
     link: 'https://skti-dev.github.io/pokedex-angular/',
     imgSrc: '/assets/projects/pokedex-cover.png',
@@ -28,9 +29,9 @@ export const PROJECTS: ProjectItems = [
   {
     title: 'Vanilla JS Game',
     technologies: [
-      AvailableTechnologies.JS,
-      AvailableTechnologies.CSS,
-      AvailableTechnologies.HTML
+      Technologies.JAVASCRIPT,
+      Technologies.CSS,
+      Technologies.HTML
     ],
     link: 'https://skti-dev.github.io/vanilla-js-game/',
     imgSrc: '/assets/projects/vanilla-js-game-cover.png',
@@ -39,10 +40,10 @@ export const PROJECTS: ProjectItems = [
   {
     title: 'Shopping Cart',
     technologies: [
-      AvailableTechnologies.REACT,
-      AvailableTechnologies.TS,
-      AvailableTechnologies.BOOTSTRAP,
-      AvailableTechnologies.HTML
+      Technologies.REACT,
+      Technologies.TYPESCRIPT,
+      Technologies.BOOTSTRAP,
+      Technologies.HTML
     ],
     link: 'https://github.com/skti-dev/shopping-cart#readme',
     imgSrc: '/assets/projects/shopping-cart-cover.png',
@@ -51,11 +52,11 @@ export const PROJECTS: ProjectItems = [
   {
     title: 'Simple Dashboard',
     technologies: [
-      AvailableTechnologies.VUE,
-      AvailableTechnologies.JS,
-      AvailableTechnologies.VUETIFY,
-      AvailableTechnologies.FIREBASE,
-      AvailableTechnologies.HTML
+      Technologies.VUE,
+      Technologies.JAVASCRIPT,
+      Technologies.VUETIFY,
+      Technologies.FIREBASE,
+      Technologies.HTML
     ],
     link: 'https://github.com/skti-dev/vuetify/blob/master/README.md',
     imgSrc: '/assets/projects/simple-dashboard-cover.png',

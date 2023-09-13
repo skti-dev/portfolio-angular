@@ -11,29 +11,29 @@
     <p>
       {{ dictionary.about.text_2 }}
       <span class="highlight-text">
-        React
+        {{ getTechnology('react') }}
       </span>,
       <span class="highlight-text">
-        Angular
+        {{ getTechnology('angular') }}
       </span>,
       <span class="highlight-text">
-        Vue
+        {{ getTechnology('vue') }}
       </span>,
       <span class="highlight-text">
-        JavaScript
+        {{ getTechnology('js') }}
       </span>,
       <span class="highlight-text">
-        TypeScript
+        {{ getTechnology('ts') }}
       </span>
       {{ dictionary.about.text_separator }}
       <span class="highlight-text">
-        Rest APIs
-      </span>
-      {{ dictionary.about.text_3 }}
+        {{ getTechnology('rest') }}
+      </span>.
+       {{ dictionary.about.text_3 }}
     </p>
     <p>
       {{ dictionary.about.text_4 }}
-      <a class="highlight-text underline-text" target="_blank" [href]="getFiapLink()">FIAP</a>
+      <a class="highlight-text underline-text" target="_blank" [href]="getFiapLink()">{{ getUniversityName() }}</a>
        {{ dictionary.about.text_5 }}
       <fa-icon [icon]="icon" />
     </p>

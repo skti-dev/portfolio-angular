@@ -1,7 +1,7 @@
 <section [id]="currentLabel" *ngIf="dictionary">
   <div class="intro-texts">
     <h3> {{ dictionary.intro.greetings }} </h3>
-    <h2> {{ dictionary.intro.presentation }} <span class="highlight-text"> Augusto</span>! </h2>
+    <h2> {{ dictionary.intro.presentation }} <span class="highlight-text"> {{ getFirstName() }}</span>! </h2>
     <div>
       <h1 class="typing-text"> {{ dictionary.intro.dynamic_text }} </h1>
     </div>
