@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { SkillProps } from '../../types/SkillsTypes';
 import { DomSanitizer } from '@angular/platform-browser';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faAward, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { SafeHtml } from '@angular/platform-browser';
 
 @Component({
@@ -16,6 +16,8 @@ export class SkillItemComponent {
   ) {}
 
   @Input() item!: SkillProps
+
+  public icon = faAward
 
   public isStringIcon():boolean {
     return typeof this.item.icon === 'string'
@@ -35,5 +37,10 @@ export class SkillItemComponent {
     }
 
     return this.sanitizer.bypassSecurityTrustHtml(this.item.icon);
+  }
+
+  public openCertificate(): void {
+    if(!this.item.certificateUrl) return
+    window.open(this.item.certificateUrl, '_blank')
   }
 }

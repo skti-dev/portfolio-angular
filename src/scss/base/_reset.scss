@@ -153,6 +153,21 @@ section {
   color: var(--secondary);
 }
 
+.custom-title {
+  transform: translateY(-14px);
+  min-height: var(--fs-lg);
+}
+
+.certificate-icon {
+  > svg {
+    position: absolute;
+    top: var(--spacing-md);
+    left: var(--spacing-md);
+    color: var(--secondary);
+    font-size: var(--fs-md);
+  }
+}
+
 /* Buttons */
 
 .flag-button {
