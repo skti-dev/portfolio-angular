@@ -14,9 +14,11 @@ export class HomeComponent implements OnInit, OnDestroy {
   ) {
     this.languageChangeSubscription = this.translateService.languageChanged$.subscribe(() => {
       this.loadDictionary();
+      this.currentLanguage = this.translateService.getLanguage()
     });
   }
 
+  public currentLanguage = this.translateService.getLanguage()
   public dictionary!: DictionaryProps
   private languageChangeSubscription!: Subscription
 
