@@ -12,3 +12,7 @@ export const LINKS = {
   LINKEDIN: 'https://www.linkedin.com/in/augusto-seabra-desenvolvedor/',
   EMAIL: `mailto:${USERS.EMAIL}`
 }
+
+export const CERTIFICATES = {
+  FIAP: 'https://www.fiap.com.br/graduacao/consulta-publica-de-diplomas/?chave=852.852.c7332967dde20fa5803047ec'
+}
