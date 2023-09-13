@@ -11,6 +11,8 @@ import { NavMenuComponent } from '../shared/components/nav-menu/nav-menu.compone
 import { NavItemComponent } from '../shared/components/nav-item/nav-item.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { AboutComponent } from './components/about/about.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { SkillItemComponent } from '../shared/components/skill-item/skill-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AboutComponent } from './components/about/about.component';
     NavMenuComponent,
     NavItemComponent,
     IntroComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent,
+    SkillItemComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,22 @@
+:host {
+  .skill-badge {
+    background-color: var(--black);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-lg);
+    height: 100%;
+    box-shadow: var(--box-shadow-md);
+
+    p {
+      color: var(--white);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100%;
+      margin-top: var(--spacing-md);
+    }
+  }
+}

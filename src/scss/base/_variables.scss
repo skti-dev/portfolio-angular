@@ -9,8 +9,8 @@
   --spacing-xxxl: 3.563rem; // 57px
   --spacing-huge: 5rem; // 80px
   // font-size
-  --fs-sm: .5rem; // 8px
-  --fs-md: 1.20rem; // 16px
+  --fs-sm: 1rem; // 16px
+  --fs-md: 1.20rem; // 19.2px
   --fs-lg: 1.5rem; // 24px
   --fs-xl: 2rem; // 32px
   // text-decoration
@@ -23,6 +23,8 @@
   --border-radius-sm: .313rem; // 5px
   --border-radius-md: .5rem; // 8px
   --border-radius-lg: 2rem; // 8px
+  // box shadow
+  --box-shadow-md: 0 0 8px 2px rgba(0, 0, 0, 0.25);
   // colors
   --white: #FFF;
   --black: #222;

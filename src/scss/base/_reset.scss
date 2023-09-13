@@ -141,6 +141,18 @@ section {
   font-weight: var(--bold-weight);
 }
 
+.section-title {
+  font-weight: var(--bold-weight);
+  width: 100%;
+  font-size: var(--fs-lg);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.skill-badge svg {
+  font-size: var(--fs-xl);
+  color: var(--secondary);
+}
+
 /* Buttons */
 
 .flag-button {

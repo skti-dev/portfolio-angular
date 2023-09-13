@@ -21,5 +21,8 @@
     "text_4": "Graduated from",
     "text_5": "and always studying something new!",
     "button_label": "Download CV"
+  },
+  "skills": {
+    "title": "Skills"
   }
 }

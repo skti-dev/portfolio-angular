@@ -1,0 +1,13 @@
+:host {
+  article {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - (var(--fs-sm) / 2)));
+    grid-template-rows: repeat(7, 125px);
+    grid-column-gap: var(--fs-sm);
+    grid-row-gap: var(--fs-sm);
+    max-width: 100%;
+    max-height: calc(100% - (var(--spacing-xxl) + 34px));
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

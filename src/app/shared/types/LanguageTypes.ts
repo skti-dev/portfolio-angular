@@ -33,5 +33,8 @@ export type DictionaryProps = {
     text_4:string
     text_5:string
     button_label:string
+  },
+  skills: {
+    title: string
   }
 }

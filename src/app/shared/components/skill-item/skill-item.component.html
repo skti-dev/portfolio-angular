@@ -1,0 +1,9 @@
+<div class="skill-badge" *ngIf="item">
+  <ng-container *ngIf="!isStringIcon(); else svgIcon">
+    <fa-icon [icon]="returnIcon()"></fa-icon>
+  </ng-container>
+  <ng-template #svgIcon>
+    <span [innerHTML]="sanitizeSvg()"></span>
+  </ng-template>
+  <p [title]="item.title"> {{ item.title }} </p>
+</div>
