@@ -1,9 +1,9 @@
-import { NavItems } from "src/app/shared/types/NavTypes";
+import { ItemLabels, NavItems } from "src/app/shared/types/NavTypes";
 import { faHome, faInfo, faBullseye, faCode, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
 export const NAV_ITEMS: NavItems =  [
   {
-    path: '',
+    path: ItemLabels.HOME,
     label: 'menu_items.home',
     icon: faHome
   },

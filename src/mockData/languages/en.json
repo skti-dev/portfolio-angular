@@ -5,5 +5,11 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "intro": {
+    "greetings": "Hi there!",
+    "presentation": "My name is",
+    "dynamic_text": "I'm a web developer.",
+    "contact_button": "Contact me"
   }
 }

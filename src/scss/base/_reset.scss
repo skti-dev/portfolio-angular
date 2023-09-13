@@ -120,6 +120,63 @@ nav svg {
   color: var(--primary);
 }
 
+
+section {
+  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xl) 0;
+  height: 100%;
+}
+
+.highlight-text {
+  color: var(--primary)
+}
+
+/* Buttons */
+
+.flag-button {
+  min-width: 300px;
+  padding: var(--spacing-lg) var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
+  border-top-right-radius: var(--border-radius-md);
+  border-bottom-right-radius: var(--border-radius-md);
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--bold-weight);
+  position: relative;
+  font-size: var(--fs-lg);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: calc((var(--spacing-xxl) - 2px) * -1);
+    top: 0;
+    border: var(--spacing-xxl) solid;
+    border-color: var(--black) transparent transparent transparent;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: calc((var(--spacing-xxl) - 2px) * -1);
+    bottom: 0;
+    border: var(--spacing-xxl) solid;
+    border-color: var(--black) transparent transparent transparent;
+    transform: rotate(180deg);
+  }
+}
+
+/* Animations */
+
 .fade-in {
   animation-name: fade-in;
   animation-duration: 300ms;
@@ -133,3 +190,27 @@ nav svg {
   }
 }
 
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: var(--border-thin) solid var(--black);
+  animation: typing 3s steps(40) 1000ms forwards, cursor-blink 850ms infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor-blink {
+  0%, 100% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: var(--black);
+  }
+}

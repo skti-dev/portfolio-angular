@@ -9,3 +9,19 @@ export enum FlagNames {
   BR = 'br',
   US = 'us'
 }
+
+export type DictionaryProps = {
+  menu_items: {
+    home:string
+    about:string
+    skills:string
+    projects:string
+    contact:string
+  },
+  intro: {
+    greetings:string
+    presentation:string
+    dynamic_text:string
+    contact_button:string
+  }
+}

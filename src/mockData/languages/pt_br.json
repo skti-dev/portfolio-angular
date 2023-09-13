@@ -5,5 +5,11 @@
     "skills": "Habilidades",
     "projects": "Projetos",
     "contact": "Contato"
+  },
+  "intro": {
+    "greetings": "Olá!",
+    "presentation": "Me chamo",
+    "dynamic_text": "Sou desenvolvedor web.",
+    "contact_button": "Entrar em contato"
   }
 }

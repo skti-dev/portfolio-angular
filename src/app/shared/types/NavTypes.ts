@@ -7,3 +7,11 @@ export type NavItemProps = {
 }
 
 export type NavItems = Array<NavItemProps>
+
+export enum ItemLabels {
+  HOME = 'intro',
+  ABOUT = 'about',
+  SKILLS = 'skills',
+  PROJECTS = 'projects',
+  CONTACT = 'contact'
+}

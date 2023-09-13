@@ -1,0 +1,21 @@
+
+:host {
+  .intro-texts {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: var(--bold-weight);
+  
+    h3, h2 {
+      width: 100%;
+    }
+  
+    h1, h2, h2 span, h3 {
+      font-size: var(--fs-lg);
+    }
+  }
+
+  img {
+    margin: var(--spacing-lg) 0;
+  }
+}

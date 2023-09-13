@@ -1,10 +1,4 @@
-:host {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: var(--spacing-xxl);
-  width: 100%;
-  h1 {
-    margin-left: var(--spacing-sm) 
-  }
+main {
+  margin-top: var(--spacing-xxxl);
+  min-height: calc(100% - var(--spacing-xxxl));
 }

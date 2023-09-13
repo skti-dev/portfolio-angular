@@ -9,6 +9,7 @@ import { HamburguerMenuComponent } from '../shared/components/hamburguer-menu/ha
 import { ToggleLanguageComponent } from '../shared/components/toggle-language/toggle-language.component';
 import { NavMenuComponent } from '../shared/components/nav-menu/nav-menu.component';
 import { NavItemComponent } from '../shared/components/nav-item/nav-item.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavItemComponent } from '../shared/components/nav-item/nav-item.compone
     HamburguerMenuComponent,
     ToggleLanguageComponent,
     NavMenuComponent,
-    NavItemComponent
+    NavItemComponent,
+    IntroComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,15 @@
+<section [id]="currentLabel" *ngIf="dictionary">
+  <div class="intro-texts">
+    <h3> {{ dictionary.intro.greetings }} </h3>
+    <h2> {{ dictionary.intro.presentation }} <span class="highlight-text"> Augusto</span>! </h2>
+    <div>
+      <h1 class="typing-text"> {{ dictionary.intro.dynamic_text }} </h1>
+    </div>
+  </div>
+
+  <img src="/assets/profile-picture.png" alt="Profile picture of Augusto Seabra" />
+
+  <button type="button" class="flag-button">
+    {{ dictionary.intro.contact_button }}
+  </button>
+</section>
