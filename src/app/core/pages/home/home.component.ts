@@ -1,7 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { TranslateService } from 'src/app/shared/services/TranslateService';
-import { DictionaryProps } from 'src/app/shared/types/LanguageTypes';
+import { AvailableLanguages, DictionaryProps } from 'src/app/shared/types/LanguageTypes';
 
 @Component({
   selector: 'app-home',
@@ -10,15 +10,17 @@ import { DictionaryProps } from 'src/app/shared/types/LanguageTypes';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   constructor(
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private cdr: ChangeDetectorRef
   ) {
     this.languageChangeSubscription = this.translateService.languageChanged$.subscribe(() => {
       this.loadDictionary();
       this.currentLanguage = this.translateService.getLanguage()
+      this.cdr.detectChanges()
     });
   }
 
-  public currentLanguage = this.translateService.getLanguage()
+  public currentLanguage: AvailableLanguages = this.translateService.getLanguage()
   public dictionary!: DictionaryProps
   private languageChangeSubscription!: Subscription
 
