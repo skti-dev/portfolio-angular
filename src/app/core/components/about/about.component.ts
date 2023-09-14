@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { AvailableLanguages, DictionaryProps } from 'src/app/shared/types/LanguageTypes';
 import { ItemLabels } from 'src/app/shared/types/NavTypes';
+import { environment } from 'src/enviroments/enviroment';
 import { CERTIFICATES, GRADUATIONS, Technologies } from 'src/mockData/constants/GeneralData';
 
 @Component({
@@ -17,7 +18,7 @@ export class AboutComponent {
   public icon = faBook
 
   public returnPath() {
-    const path = '/mockData/cvs/cv_augusto_'
+    const path = `${environment.path}/mockData/cvs/cv_augusto_`
     const extension = '.docx'
     if(!this.currentLanguage) return `${path}pt_br${extension}`
     return `${path}${this.currentLanguage}${extension}`

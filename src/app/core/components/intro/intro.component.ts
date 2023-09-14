@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { DictionaryProps } from 'src/app/shared/types/LanguageTypes';
 import { ItemLabels } from 'src/app/shared/types/NavTypes';
+import { environment } from 'src/enviroments/enviroment';
 import { USERS } from 'src/mockData/constants/GeneralData';
 
 @Component({
@@ -15,5 +16,9 @@ export class IntroComponent {
 
   public getFirstName(): string {
     return USERS.FIRST_NAME
+  }
+
+  public returnImagePath(): string {
+    return `${environment.path}/assets/profile-picture.png`
   }
 }

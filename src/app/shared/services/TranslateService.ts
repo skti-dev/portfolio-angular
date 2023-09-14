@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of, Subject } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { AvailableLanguages } from '../types/LanguageTypes';
+import { environment } from 'src/enviroments/enviroment';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class TranslateService {
   public languageChanged$ = this.languageChanged.asObservable();
 
   public loadTranslations(): Observable<any> {
-    return this.http.get(`/mockData/languages/${this.currentLanguage}.json`).pipe(
+    return this.http.get(`${environment.path}/mockData/languages/${this.currentLanguage}.json`).pipe(
       map(data => {
         this.translations = data;
         return data;

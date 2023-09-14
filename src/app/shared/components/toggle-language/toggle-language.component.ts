@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FlagNames, LANGUAGE_KEY, AvailableLanguages } from '../../types/LanguageTypes';
 import { LocalStorageService } from '../../services/LocalStorageService';
 import { TranslateService } from '../../services/TranslateService';
+import { environment } from 'src/enviroments/enviroment';
 
 @Component({
   selector: 'app-toggle-language',
@@ -59,5 +60,9 @@ export class ToggleLanguageComponent implements OnInit {
         console.error('Unkown language')
         return AvailableLanguages.PT_BR
     }
+  }
+
+  public returnImagePath(): string {
+    return `${environment.path}/assets/${this.displayFlag}.png`
   }
 }
