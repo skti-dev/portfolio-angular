@@ -1,0 +1,35 @@
+{
+  "menu_items": {
+    "home": "Home",
+    "about": "Sobre mim",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "intro": {
+    "greetings": "Olá!",
+    "presentation": "Me chamo",
+    "dynamic_text": "Sou desenvolvedor web.",
+    "contact_button": "Entrar em contato"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "text_1": "anos de experiência profissional com desenvolvimento web.",
+    "text_2": "Com foco em front-end, tenho conhecimentos sólidos em",
+    "text_separator": "e",
+    "text_3": "Experiência com metodologias agéis.",
+    "text_4": "Formado pela",
+    "text_5": "e sempre estudando algo novo!",
+    "button_label": "Download CV"
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "projects": {
+    "title": "Projetos"
+  },
+  "contact": {
+    "title": "Contato",
+    "button_label": "Chamar no"
+  }
+}
