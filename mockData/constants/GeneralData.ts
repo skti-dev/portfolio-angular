@@ -5,7 +5,7 @@ export const USERS = {
   EMAIL: 'augusto.seabra00@gmail.com'
 }
 
-export const PHONE_NUMBER = '+55 11 951507441'
+export const PHONE_NUMBER = '+55 11 95150-7441'
 
 export const LINKS = {
   WHATSAPP: 'https://wa.me/5511951507441',
