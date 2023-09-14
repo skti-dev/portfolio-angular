@@ -2,7 +2,7 @@
   width: 100%;
   height: calc(100% - var(--spacing-xxxl));
   margin-top: var(--spacing-xxxl);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
