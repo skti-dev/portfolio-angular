@@ -32,6 +32,10 @@
   --black: #222;
   --primary: #F44E4E;
   --secondary: #3E4246;
+  --alter-primary: #d47373;
   --light-gray: #CCC;
-  --transparent-gray: rgba(180, 180, 180, .25)
+  --transparent-gray: rgba(180, 180, 180, .25);
+  // breakpoints
 }
+
+$large-screen: 800px;

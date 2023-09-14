@@ -9,7 +9,9 @@
 
   <img [src]="returnImagePath()" alt="Profile picture of Augusto Seabra" />
 
-  <button type="button" class="flag-button" (click)="call()">
-    {{ dictionary.intro.contact_button }}
-  </button>
+  <div class="intro-button">
+    <button type="button" class="flag-button" (click)="call()">
+      {{ dictionary.intro.contact_button }}
+    </button>
+  </div>
 </section>

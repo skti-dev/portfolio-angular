@@ -49,8 +49,10 @@
 
     ul {
       display: flex;
+      justify-content: flex-start;
       overflow-x: auto;
       overflow-y: hidden;
+      width: 100%;
       max-width: 100%;
       gap: var(--spacing-sm);
       li {

@@ -1,4 +1,6 @@
 
+@import '../../../../scss/base/variables';
+
 :host {
   .intro-texts {
     width: 90%;
@@ -17,5 +19,23 @@
 
   img {
     margin: var(--spacing-lg) 0;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    section {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .intro-texts {
+      width: 40%;
+    }
+
+    .intro-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

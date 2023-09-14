@@ -1,13 +1,12 @@
-:host {
-  section {
-    position: relative;
-  }
+@import '../../../../scss/base/variables';
 
+:host {
   ul {
     flex: 1;
-    margin: var(--spacing-xxl) 0;
+    margin: var(--spacing-xxl) 0 0 0;
     padding: 0 var(--spacing-lg);
     width: 100%;
+    max-height: calc(100% - (48px + 34px + 38px));
 
     li {
       width: 100%;
@@ -19,8 +18,6 @@
   }
 
   footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: var(--spacing-md);
     display: flex;
@@ -30,6 +27,22 @@
     color: var(--light-gray);
     p {
       font-size: var(--fs-xs);
+    }
+  }
+
+  @media screen and (min-width: $large-screen) {
+    section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    h2 {
+      order: -2;
+    }
+    
+    ul {
+      order: -1;
     }
   }
 }

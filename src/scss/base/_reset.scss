@@ -112,6 +112,20 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: var(--fs-md);
   box-sizing: border-box;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: var(--spacing-sm);
+    height: var(--spacing-sm);
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var(--transparent-gray); 
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--alter-primary); 
+  }
 }
 
 nav svg {

@@ -1,3 +1,5 @@
+@import '../../../../scss/base/variables';
+
 :host {
   article {
     flex: 1;
@@ -10,5 +12,12 @@
     grid-template-rows: repeat(5, 250px);
     grid-column-gap: var(--fs-sm);
     grid-row-gap: var(--fs-sm);
+  }
+
+  @media screen and (min-width: $large-screen) {
+    article {
+      grid-template-columns: repeat(2, calc(50% - (var(--fs-sm) / 2)));
+      grid-template-rows: repeat(3, 275px);
+    }
   }
 }
