@@ -1,19 +1,23 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { MenuService } from '../../services/MenuService';
 
 @Component({
   selector: 'app-hamburguer-menu',
   templateUrl: './hamburguer-menu.component.html',
   styleUrls: ['./hamburguer-menu.component.scss']
 })
-export class HamburguerMenuComponent implements OnInit {
-  @Input() initialState: boolean = false;
+export class HamburguerMenuComponent {
   @Output() currentState = new EventEmitter<boolean>();
 
-  public isMenuOpen: boolean = false;
-
-  ngOnInit() {
-    this.isMenuOpen = this.initialState || false;
+  constructor(
+    private menuService: MenuService
+  ) {
+    this.menuService.isMenuOpen$.subscribe(isOpen => {
+      this.isMenuOpen = isOpen
+    })
   }
+
+  public isMenuOpen: boolean = false;
 
   toggleIsMenuOpen() {
     this.isMenuOpen = !this.isMenuOpen;

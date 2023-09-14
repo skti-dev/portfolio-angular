@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 
 import { LocalStorageService } from './shared/services/LocalStorageService';
 import { TranslateService } from './shared/services/TranslateService';
+import { MenuService } from './shared/services/MenuService';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { TranslateService } from './shared/services/TranslateService';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [LocalStorageService, TranslateService],
+  providers: [LocalStorageService, TranslateService, MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
