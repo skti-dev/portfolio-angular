@@ -1,5 +1,6 @@
 import { ProjectItems } from "src/app/shared/types/ProjectsTypes";
 import { Technologies } from "./GeneralData";
+import { environment } from "src/enviroments/enviroment";
 
 export const PROJECTS: ProjectItems = [
   {
@@ -11,7 +12,7 @@ export const PROJECTS: ProjectItems = [
       Technologies.HTML
     ],
     link: 'https://skate-dice.vercel.app/',
-    imgSrc: '/assets/projects/skate-dice-cover.png',
+    imgSrc: `${environment.path}/assets/projects/skate-dice-cover.png`,
     imgAlt: 'Skate Dice home page'
   },
   {
@@ -23,7 +24,7 @@ export const PROJECTS: ProjectItems = [
       Technologies.HTML
     ],
     link: 'https://skti-dev.github.io/pokedex-angular/',
-    imgSrc: '/assets/projects/pokedex-cover.png',
+    imgSrc: `${environment.path}/assets/projects/pokedex-cover.png`,
     imgAlt: 'Pokedex home page'
   },
   {
@@ -34,7 +35,7 @@ export const PROJECTS: ProjectItems = [
       Technologies.HTML
     ],
     link: 'https://skti-dev.github.io/vanilla-js-game/',
-    imgSrc: '/assets/projects/vanilla-js-game-cover.png',
+    imgSrc: `${environment.path}/assets/projects/vanilla-js-game-cover.png`,
     imgAlt: 'Vanilla JS Game home page'
   },
   {
@@ -46,7 +47,7 @@ export const PROJECTS: ProjectItems = [
       Technologies.HTML
     ],
     link: 'https://github.com/skti-dev/shopping-cart#readme',
-    imgSrc: '/assets/projects/shopping-cart-cover.png',
+    imgSrc: `${environment.path}/assets/projects/shopping-cart-cover.png`,
     imgAlt: 'Shopping cart home page'
   },
   {
@@ -59,7 +60,7 @@ export const PROJECTS: ProjectItems = [
       Technologies.HTML
     ],
     link: 'https://github.com/skti-dev/vuetify/blob/master/README.md',
-    imgSrc: '/assets/projects/simple-dashboard-cover.png',
+    imgSrc: `${environment.path}/assets/projects/simple-dashboard-cover.png`,
     imgAlt: 'Simple dashboard home page'
   }
 ]
