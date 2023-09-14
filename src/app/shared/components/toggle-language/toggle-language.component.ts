@@ -15,7 +15,7 @@ export class ToggleLanguageComponent implements OnInit {
     private translateService: TranslateService
   ) {}
 
-  public displayFlag: FlagNames = FlagNames.US
+  public displayFlag: FlagNames = FlagNames.BR
   public currentLanguage: AvailableLanguages = AvailableLanguages.PT_BR
 
   ngOnInit(): void {
