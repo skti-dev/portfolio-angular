@@ -269,15 +269,18 @@ footer {
   overflow: hidden;
   white-space: nowrap;
   border-right: var(--border-thin) solid var(--black);
-  animation: typing 3s steps(40) 1000ms forwards, cursor-blink 850ms infinite;
+  opacity: 0;
+  animation: typing 3000ms steps(40) 1000ms forwards, cursor-blink 850ms infinite;
 }
 
 @keyframes typing {
   from {
     width: 0;
+    opacity: 1;
   }
   to {
     width: 100%;
+    opacity: 1;
   }
 }
 
