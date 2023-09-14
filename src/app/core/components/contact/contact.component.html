@@ -1,7 +1,7 @@
 <section [id]="currentLabel" *ngIf="dictionary">
   <h2 class="section-title"> {{ dictionary.contact.title }} </h2>
   
-  <button type="button" class="chip-button" (click)="callOnWhatsapp()">
+  <button type="button" class="chip-button" (click)="call()">
     {{ dictionary.contact.button_label }} Whatsapp
   </button>
 

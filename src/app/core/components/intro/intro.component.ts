@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { WhatsappService } from 'src/app/shared/services/WhatsappService';
 import { DictionaryProps } from 'src/app/shared/types/LanguageTypes';
 import { ItemLabels } from 'src/app/shared/types/NavTypes';
 import { environment } from 'src/enviroments/enviroment';
@@ -10,6 +11,10 @@ import { USERS } from 'src/mockData/constants/GeneralData';
   styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent {
+  constructor(
+    private whatsappService: WhatsappService
+  ) {  }
+
   @Input() dictionary!: DictionaryProps;
 
   public currentLabel: ItemLabels = ItemLabels.HOME
@@ -20,5 +25,9 @@ export class IntroComponent {
 
   public returnImagePath(): string {
     return `${environment.path}/assets/profile-picture.png`
+  }
+
+  public call(): void {
+    this.whatsappService.call()
   }
 }
