@@ -1,5 +1,3 @@
-# Angular Boilerplate
+# Portfolio Angular
 
-- FontAwesome Icons
-- LazyLoad
-- CSS Reset
+[Visit](https://skti-dev.github.io/portfolio-angular/)
