@@ -16,6 +16,42 @@ export const PROJECTS: ProjectItems = [
     imgAlt: 'Skate Dice home page'
   },
   {
+    title: 'Sonix Aparelhos Auditivos',
+    technologies: [
+      Technologies.JAVASCRIPT,
+      Technologies.REACT,
+      Technologies.SASS,
+      Technologies.HTML
+    ],
+    link: 'https://sonix.com.br/',
+    imgSrc: `${environment.path}/assets/projects/sonix-cover.png`,
+    imgAlt: 'Sonix home page'
+  },
+  {
+    title: 'Expocond',
+    technologies: [
+      Technologies.JAVASCRIPT,
+      Technologies.REACT,
+      Technologies.SASS,
+      Technologies.HTML
+    ],
+    link: 'http://expocondjpa.com.br/',
+    imgSrc: `${environment.path}/assets/projects/expocond-cover.png`,
+    imgAlt: 'Expocond home page'
+  },
+  {
+    title: 'JAC Grupo',
+    technologies: [
+      Technologies.JAVASCRIPT,
+      Technologies.REACT,
+      Technologies.SASS,
+      Technologies.HTML
+    ],
+    link: 'https://jacgruporj.com.br/',
+    imgSrc: `${environment.path}/assets/projects/jac-cover.png`,
+    imgAlt: 'JAC Grupo home page'
+  },
+  {
     title: 'Pokedex',
     technologies: [
       Technologies.TYPESCRIPT,
@@ -51,16 +87,15 @@ export const PROJECTS: ProjectItems = [
     imgAlt: 'Shopping cart home page'
   },
   {
-    title: 'Simple Dashboard',
+    title: 'ACFJ (Em construção)',
     technologies: [
-      Technologies.VUE,
       Technologies.JAVASCRIPT,
-      Technologies.VUETIFY,
-      Technologies.FIREBASE,
+      Technologies.REACT,
+      Technologies.SASS,
       Technologies.HTML
     ],
-    link: 'https://github.com/skti-dev/vuetify/blob/master/README.md',
-    imgSrc: `${environment.path}/assets/projects/simple-dashboard-cover.png`,
-    imgAlt: 'Simple dashboard home page'
-  }
+    link: 'https://instagram.com/skti.z',
+    imgSrc: `${environment.path}/assets/projects/acfj-cover.jpeg`,
+    imgAlt: 'ACFJ home page'
+  },
 ]
